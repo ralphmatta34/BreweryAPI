@@ -14,6 +14,10 @@
 		B33823EE2C0F0FD000E49A9B /* BreweryAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33823ED2C0F0FD000E49A9B /* BreweryAPITests.swift */; };
 		B33823F82C0F0FD000E49A9B /* BreweryAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33823F72C0F0FD000E49A9B /* BreweryAPIUITests.swift */; };
 		B33823FA2C0F0FD000E49A9B /* BreweryAPIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33823F92C0F0FD000E49A9B /* BreweryAPIUITestsLaunchTests.swift */; };
+		B33824082C0F10C200E49A9B /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33824072C0F10C200E49A9B /* APIManager.swift */; };
+		B338240D2C0F13A400E49A9B /* AutocompleteResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B338240C2C0F13A400E49A9B /* AutocompleteResult.swift */; };
+		B33824102C0F186700E49A9B /* BreweryDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B338240F2C0F186700E49A9B /* BreweryDetailsView.swift */; };
+		B33824122C0F1E6900E49A9B /* SingleBrewery.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33824112C0F1E6900E49A9B /* SingleBrewery.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		B33823F32C0F0FD000E49A9B /* BreweryAPIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreweryAPIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B33823F72C0F0FD000E49A9B /* BreweryAPIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryAPIUITests.swift; sourceTree = "<group>"; };
 		B33823F92C0F0FD000E49A9B /* BreweryAPIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryAPIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B33824072C0F10C200E49A9B /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		B338240C2C0F13A400E49A9B /* AutocompleteResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutocompleteResult.swift; sourceTree = "<group>"; };
+		B338240F2C0F186700E49A9B /* BreweryDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryDetailsView.swift; sourceTree = "<group>"; };
+		B33824112C0F1E6900E49A9B /* SingleBrewery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleBrewery.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,9 @@
 		B33823DB2C0F0FCE00E49A9B /* BreweryAPI */ = {
 			isa = PBXGroup;
 			children = (
+				B338240E2C0F185400E49A9B /* Views */,
+				B33824092C0F137A00E49A9B /* Models */,
+				B33824062C0F10AB00E49A9B /* Managers */,
 				B33823DC2C0F0FCE00E49A9B /* BreweryAPIApp.swift */,
 				B33823DE2C0F0FCE00E49A9B /* ContentView.swift */,
 				B33823E02C0F0FD000E49A9B /* Assets.xcassets */,
@@ -125,6 +136,31 @@
 				B33823F92C0F0FD000E49A9B /* BreweryAPIUITestsLaunchTests.swift */,
 			);
 			path = BreweryAPIUITests;
+			sourceTree = "<group>";
+		};
+		B33824062C0F10AB00E49A9B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B33824072C0F10C200E49A9B /* APIManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		B33824092C0F137A00E49A9B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B338240C2C0F13A400E49A9B /* AutocompleteResult.swift */,
+				B33824112C0F1E6900E49A9B /* SingleBrewery.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B338240E2C0F185400E49A9B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B338240F2C0F186700E49A9B /* BreweryDetailsView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +293,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B338240D2C0F13A400E49A9B /* AutocompleteResult.swift in Sources */,
+				B33824082C0F10C200E49A9B /* APIManager.swift in Sources */,
 				B33823DF2C0F0FCE00E49A9B /* ContentView.swift in Sources */,
 				B33823DD2C0F0FCE00E49A9B /* BreweryAPIApp.swift in Sources */,
+				B33824122C0F1E6900E49A9B /* SingleBrewery.swift in Sources */,
+				B33824102C0F186700E49A9B /* BreweryDetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
